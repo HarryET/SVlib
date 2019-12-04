@@ -19,12 +19,3 @@ exports.send = function(data, keyToPayForData) {
 exports.getDataBack = function () {
     read.getDataBack();
 };
-
-// ------------------------------ Program starts ------------------------------
-
-// privateKey in WIF format from before
-const fundingKey = useExistingKey('L2Zm65pBaFnKnocVY9u2n4Gut9PriEoeLMiGZVk9wCLeLGXYnEAN')
-
-send('Super cool data burnt to chain.', fundingKey)
-
-getDataBack()
